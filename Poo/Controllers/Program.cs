@@ -6,23 +6,29 @@ using System.Linq;
 
 namespace Poo
 {
-    internal class Program
+    internal class Program 
     {
         public static void Main(string[] args)
         {
-            List<Inventaire> items = File.ReadAllLines("./inventaires.tsv")
+            List<Items> item = File.ReadAllLines("./inventaires.tsv")
                 .Skip(1)
-                .Select(line => Inventaire.FromTsv(line))
+                .Select(line => Items.FromTsv(line))
                 .ToList();
 
             if (welcome())
             {
-                foreach (Inventaire obj in items)
+                foreach (Items obj in item)
                 {
                     Console.WriteLine(obj.Prettify());
                 }
+                Create();
+                foreach (Items obj in item)
+                {
+                    Console.WriteLine(obj.Prettify());
+                } 
+                
+               
             }
-            
         }
 
         public static bool welcome()
@@ -35,7 +41,8 @@ namespace Poo
             if (userInput == "oui")
             {
                 return true;
-            }else if (userInput == "non")
+            }
+            else if (userInput == "non")
             {
                 Console.WriteLine("Très bien c'est noté, au revoir!");
                 return false;
@@ -45,9 +52,15 @@ namespace Poo
                 Console.WriteLine("Ce choix n'est pas disponible, au revoir");
                 return false;
             }
-
+        }
+        
+        public static void Create()
+        {
+            Console.WriteLine("Quel article voulez-vous créer?");
+            string userInput = Console.ReadLine();
+         
+          
 
         }
     }
-
 }
