@@ -1,0 +1,7 @@
+/Users/yenoux/RiderProjects/Poo/Poo/bin/Debug/Poo.exe
+/Users/yenoux/RiderProjects/Poo/Poo/bin/Debug/Poo.pdb
+/Users/yenoux/RiderProjects/Poo/Poo/obj/Debug/Poo.csproj.AssemblyReference.cache
+/Users/yenoux/RiderProjects/Poo/Poo/obj/Debug/Poo.csproj.CoreCompileInputs.cache
+/Users/yenoux/RiderProjects/Poo/Poo/obj/Debug/Poo.exe
+/Users/yenoux/RiderProjects/Poo/Poo/obj/Debug/Poo.pdb
+/Users/yenoux/RiderProjects/Poo/Poo/bin/Debug/inventaires.tsv
